@@ -7,17 +7,34 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <div>
-            <div class="menu">
-                <ul class="menu_list">
-                    <li id="me">|   Ryan Schwarzkopf    |</li>
-                    <li class="menu_item"><a href="/index.html">Home</a></li>
-                    <li class="menu_item"><a href="/projects.html">Project</a></li>
-                    <li class="menu_item"><a href="/hobbies.html">Interest</a></li>
-                    <li class="menu_item"s><a href="/contact.html">Contact</a></li>
-                </ul>
+        <div id="menu">
+            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+            <label  id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <h3>| Ryan |</h3>
+                    <ul id="menu-list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/projects.html">Project</a></li>
+                        <li><a href="/hobbies.html">Interest</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <button class="light-dark">☾ ☀︎</button>
+                    
+                </nav>
+            </label>
+            <div class="overlay"></div>
+        </div>
+        
+        <img id="my-face" src="./images/image1.png">
+        <div id="name">
+            <div style="flex-grow:2"></div>
+            <div id="first">
+                Ryan
             </div>
-            <div id="lower_menu"><button class="light-dark">☾ ☀︎</button><br></div>
+            <div id="last">
+                Schwarzkopf
+            </div>
         </div>
     </body>
 </html>
