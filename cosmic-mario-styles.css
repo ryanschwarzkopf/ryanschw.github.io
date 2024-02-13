@@ -1,0 +1,90 @@
+html {
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+body {
+    background-image: url('./images/beautiful-shining-stars-night-sky.jpg');
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    font-family: Didot;
+}
+
+#menu {
+    position: relative;
+    height: 100vh;
+    width: 20%;
+    z-index: 1;
+}
+
+#my-face {
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    transform: translateX(-40%);
+    height: 110vh;
+    z-index: -1;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    width: fit-content;
+    color: #fbcc16;
+}
+
+#first, #last {
+    margin: 10px;
+    font-size: 15vw;
+    z-index: 100;
+}
+
+#first {
+    transform: translateY(8vw);
+}
+
+
+#hamburger-menu {
+    width: 100px;
+    height: 20px;
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+    background: linear-gradient(to bottom,
+            black, black 33%,
+            #b5b5b5 33%, #b5b5b5 66%,
+            black 66%, black 100%);
+    z-index: 100;
+}
+
+#hamburger-menu #sidebar-menu {
+    visibilty: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #3D0E61;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#spaceshit {
+    position: absolute;
+    height: 50vh;
+    animation: space-flight .3s 4s linear infinite;
+    z-index: 0;
+}
