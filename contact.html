@@ -1,21 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en-US">
+<html lang="en-US">
+    <head>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="Ryan Schwarzkopf">
         <title>Ryan Schwarzkopf</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="contact-styles.css">
     </head>
     <body>
-        <div>
-            <div class="menu">
-                <ul class="menu_list">
-                    <li id="me">|   Ryan Schwarzkopf    |</li>
-                    <li class="menu_item"><a href="/index.html">Home</a></li>
-                    <li class="menu_item"><a href="/projects.html">Project</a></li>
-                    <li class="menu_item"><a href="/hobbies.html">Interest</a></li>
-                    <li class="menu_item"s><a href="/contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div id="menu_div"><br></div>
+        <div id="menu">
+            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+            <label  id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <ul id="menu-list">
+                        <li><a id="menu-header" href="/index.html">| Ryan |</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/projects.html">Project</a></li>
+                        <li><a href="/hobbies.html">Interests</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </label>
+            <div class="overlay"></div>
         </div>
+        
+        <ul id="contact">
+            <li id="contact-info">Ryan Schwarzkopf</li>
+            <li id="contact-info">Undergraduate Student and Tutor</li>
+            <li id="contact-info">Computer Science</li>
+            <li id="contact-info">New Mexico State University</li>
+            <li id="contact-info">flckid@nmsu.edu</li>
+            <li id="contact-info"><a id="contact-link" href="https://www.linkedin.com/in/ryanschwarzkopf">linkedin</a></li>
+            <li id="contact-info"><a id="contact-link" href="https://github.com/ryanschwarzkopf?tab=overview&from=2024-02-01&to=2024-02-13">github</a></li>
+            <li id="contact-info">Site by Me</li>
+
+        </ul>
+        
     </body>
 </html>

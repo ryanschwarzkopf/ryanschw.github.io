@@ -1,21 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en-US">
+<html lang="en-US">
+    <head>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="Ryan Schwarzkopf">
         <title>Ryan Schwarzkopf</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="hobbies-styles.css">
     </head>
     <body>
-        <div>
-            <div class="menu">
-                <ul class="menu_list">
-                    <li id="me">|   Ryan Schwarzkopf    |</li>
-                    <li class="menu_item"><a href="/index.html">Home</a></li>
-                    <li class="menu_item"><a href="/projects.html">Project</a></li>
-                    <li class="menu_item"><a href="/hobbies.html">Interest</a></li>
-                    <li class="menu_item"s><a href="/contact.html">Contact</a></li>
-                </ul>
+        <div id="menu">
+            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+            <label  id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <ul id="menu-list">
+                        <li><a id="menu-header" href="/index.html">| Ryan |</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/projects.html">Project</a></li>
+                        <li><a href="/hobbies.html">Interests</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <!--
+                    <button class="light-dark">☾ ☀︎</button>
+                    <button><a href="./cosmic-mario.html">toggle</a></button>
+                    --> 
+                </nav>
+            </label>
+            <div class="overlay"></div>
+        </div>
+        
+        <div id="container">
+            <div class="row-odd">
+                <img id="skiing" src="./images/IMG_4198.jpeg">
+                <div class="para">This is skiing. I like making turns in snow and sitting on moving chairs at the treetops.
+                     In this photo here, I absolutely ate shit. I can't afford to make turns very often,
+                     so I work up on a mountain as a teacher. Now other people can make turns too.
+                     </div>
             </div>
-            <div id="menu_div"><br></div>
+            <div class="row-even">
+                <img id="other" src="./images/pexels-darcy-lawrey-733740.jpg">
+                <div class="para">Contrary to snowboard and apparel manufacturer based in Denver: Never Summer, 
+                    it actually is summer like .. every year probably. I think mountain-biking is another  
+                    way to make turns. 
+                </div>
+            </div>
+            <div class="row-odd">
+                <img id="other"  style="padding-right: 10px;" src="./images/70051717320__861972E7-7C6C-4D30-8E26-32E943CB5A45.JPG">
+                <img id="other" src="./images/IMG_91D140BAF702-1.jpeg">
+                <div class="para">This rock is a fake rock, but it's still hard. It's hard to climb up.
+                    Climbing rocks is cool.
+                </div>
+            </div>
+            <div class="row-even">
+                <img id="other" src="./images/IMG_0832.JPG">
+                <div class="para">
+                    Camping, Fire. Cooking.
+                </div>
+            </div>
         </div>
     </body>
 </html>

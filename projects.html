@@ -1,21 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en-US">
+<html lang="en-US">
+    <head>
+        <meta name="description" content="Personal Website">
+        <meta name="author" content="Ryan Schwarzkopf">
         <title>Ryan Schwarzkopf</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="hobbies-styles.css">
     </head>
     <body>
-        <div>
-            <div class="menu">
-                <ul class="menu_list">
-                    <li id="me">|   Ryan Schwarzkopf    |</li>
-                    <li class="menu_item"><a href="/index.html">Home</a></li>
-                    <li class="menu_item"><a href="/projects.html">Project</a></li>
-                    <li class="menu_item"><a href="/hobbies.html">Interest</a></li>
-                    <li class="menu_item"s><a href="/contact.html">Contact</a></li>
-                </ul>
+        <div id="menu">
+            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+            <label  id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <ul id="menu-list">
+                        <li><a id="menu-header" href="/index.html">| Ryan |</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/projects.html">Project</a></li>
+                        <li><a href="/hobbies.html">Interests</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <!--
+                    <button class="light-dark">☾ ☀︎</button>
+                    <button><a href="./cosmic-mario.html">toggle</a></button>
+                    --> 
+                </nav>
+            </label>
+            <div class="overlay"></div>
+        </div>
+        
+        <div id="container">
+            <div class="row-odd">
+                <div class="title">Flight Simulator Extension</div>
+                <div class="para">
+                    This is my current project. Collaborating with Sandia National Laboratory 
+                    and New Mexico State University students to develop Prepar3D toolkit 
+                    extension for visualization of flight metrics using Agile project 
+                    management. This toolkit will provide useful flight visualization features 
+                    for Sandia engineers using Prepar3D. The toolkit will feature a 3d 
+                    line following the aircraft's telemetric data, as well as a dashboard 
+                    to display relevant flight metrics.
+                </div>
             </div>
-            <div id="menu_div"><br></div>
+            <div class="row-even">
+                <div class="title">Predict Used Car Value</div>
+                <div class="para">
+                    Worked with a team of New Mexico State University students to predict the 
+                    price of a used car by applying various data-mining techniques. Individually 
+                    contributed to data cleaning and trained a Multi-Layered Perceptron classifier
+                    with the Scikit-Learn framework. This task proved to be difficult to solve for 
+                    a neural network however the support vector machine was able to predict the 
+                    vehicles value reasonably well.
+                </div>
+            </div>
+            <div class="row-odd">
+                <div class="title">SARS-Cov-2</div>
+                <div class="para">
+                    A search for most frequent K-Mers in Coronavirus revealed RNA synthesis starters. 
+                    Mapped most common 9-mers in various Coronavirus strains onto a phylogenetic
+                    tree to infer ancestral sequences of Coronavirus.
+                </div>
+            </div>
+            <div class="row-even">
+                <div class="title">C-MINUS+ to MIPS Assembly Compiler</div>
+                <div class="para">
+                    Developed a minimal compiler for C-MINUS+ (a subset of C) to MIPS Assembly Language 
+                    using Lex and Yacc tools. Written in C.
+                </div>
+            </div>
+            </div>
         </div>
     </body>
 </html>
