@@ -56,33 +56,68 @@ body {
 }
 
 
+#hamburger-input {
+    visibility: hidden;
+}
+
 #hamburger-menu {
     width: 100px;
     height: 20px;
     display: block;
     border: none;
     padding: 0px;
-    margin: 20px;
+    margin: 25px;
     background: linear-gradient(to bottom,
-            black, black 33%,
-            #b5b5b5 33%, #b5b5b5 66%,
-            black 66%, black 100%);
+            #00a8ae, #00a8ae 33%,
+            #00a8ae 33%, #00a8ae 66%,
+            #00a8ae 66%, #00a8ae 100%);
     z-index: 100;
 }
 
 #hamburger-menu #sidebar-menu {
-    visibilty: hidden;
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: -250px;
     width: 200px;
     height: 100%;
-    background-color: #3D0E61;
-    padding: 0px 10px;
-    box-sizing: border-box;
+    background-color: black;
+    color: #fbcc16;
+    transition: .3s ease-in;
 }
 
-#spaceshit {
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+}
+
+#menu-header {
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+#menu-list {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color:#fbcc16;
+    font-size: 20px;
+}
+
+li {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#spaceship {
     position: absolute;
     height: 50vh;
     animation: space-flight .3s 4s linear infinite;
